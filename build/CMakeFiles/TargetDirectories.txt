@@ -1,0 +1,9 @@
+/Users/areay7/QtCode/Qt_Sql/Opencv_test/build/CMakeFiles/Opencv_test.dir
+/Users/areay7/QtCode/Qt_Sql/Opencv_test/build/CMakeFiles/edit_cache.dir
+/Users/areay7/QtCode/Qt_Sql/Opencv_test/build/CMakeFiles/rebuild_cache.dir
+/Users/areay7/QtCode/Qt_Sql/Opencv_test/build/CMakeFiles/list_install_components.dir
+/Users/areay7/QtCode/Qt_Sql/Opencv_test/build/CMakeFiles/install.dir
+/Users/areay7/QtCode/Qt_Sql/Opencv_test/build/CMakeFiles/install/local.dir
+/Users/areay7/QtCode/Qt_Sql/Opencv_test/build/CMakeFiles/install/strip.dir
+/Users/areay7/QtCode/Qt_Sql/Opencv_test/build/CMakeFiles/Opencv_test_autogen_timestamp_deps.dir
+/Users/areay7/QtCode/Qt_Sql/Opencv_test/build/CMakeFiles/Opencv_test_autogen.dir
