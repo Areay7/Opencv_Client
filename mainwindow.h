@@ -28,10 +28,13 @@ public:
     //定时器事件
     void timerEvent(QTimerEvent *e);
 
+
 private slots:
     void timer_connect();
     void stop_connect();
     void start_connect();
+
+    void recv_data();
 
 private:
     Ui::MainWindow *ui;

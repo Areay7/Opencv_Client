@@ -19,6 +19,9 @@ MainWindow::MainWindow(QWidget *parent)
     connect(&msocket, &QTcpSocket::disconnected, this, &MainWindow::start_connect);
     connect(&msocket, &QTcpSocket::connected, this, &MainWindow::stop_connect);
 
+    // 关联数据接受的函数
+    connect(&msocket, &QTcpSocket::readyRead, this, &MainWindow::recv_data);
+
     // 连接服务器定时器
     connect(&mtimer, &QTimer::timeout, this, &MainWindow::timer_connect);
     mtimer.start(5000);
@@ -85,10 +88,18 @@ void MainWindow::timerEvent(QTimerEvent *e)
     ui->videoLb->setPixmap(mmp);
 }
 
+void MainWindow::recv_data()
+{
+    QString msg = msocket.readAll();
+    qDebug() << "msg : " << msg;
+    ui->lineEdit->setText(msg);
+}
+
 void MainWindow::timer_connect()
 {
     // 连接服务器
-    msocket.connectToHost("192.168.1.17", 9999);
+    // msocket.connectToHost("192.168.1.17", 9999);
+    msocket.connectToHost("127.0.0.1", 9999);
     qDebug() << "connecting";
 }
 
