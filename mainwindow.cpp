@@ -94,7 +94,9 @@ void MainWindow::timerEvent(QTimerEvent *e)
     {
         //把人脸框移动到中心位置
         ui->headpicLb->move(140,100);
+        ui->widgetLb->hide();
         flag = 0;
+
     }
 
 
