@@ -26,7 +26,7 @@
     <property name="styleSheet">
      <string notr="true"/>
     </property>
-    <widget class="QWidget" name="widget_2" native="true">
+    <widget class="QWidget" name="widgetLb" native="true">
      <property name="geometry">
       <rect>
        <x>90</x>
@@ -137,7 +137,7 @@ color: rgb(255, 255, 255);</string>
      </property>
     </widget>
     <zorder>videoLb</zorder>
-    <zorder>widget_2</zorder>
+    <zorder>widgetLb</zorder>
     <zorder>headpicLb</zorder>
    </widget>
    <widget class="QWidget" name="widget_3" native="true">
@@ -266,7 +266,7 @@ QLineEdit{
           </spacer>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit">
+          <widget class="QLineEdit" name="numberEdit">
            <property name="enabled">
             <bool>false</bool>
            </property>
@@ -344,7 +344,7 @@ QLineEdit{
           </spacer>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit_2">
+          <widget class="QLineEdit" name="nameEdit">
            <property name="enabled">
             <bool>false</bool>
            </property>
@@ -422,7 +422,7 @@ QLineEdit{
           </spacer>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit_3">
+          <widget class="QLineEdit" name="departmentEdit">
            <property name="enabled">
             <bool>false</bool>
            </property>
@@ -500,7 +500,7 @@ QLineEdit{
           </spacer>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit_4">
+          <widget class="QLineEdit" name="timeEdit">
            <property name="enabled">
             <bool>false</bool>
            </property>

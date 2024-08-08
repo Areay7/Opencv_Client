@@ -99,6 +99,9 @@
  mdp:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/wait.h
  mdp:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/time.h
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/QDebug
+ mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/QJsonDocument
+ mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/QJsonObject
+ mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/QJsonParseError
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/QTimer
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/q20memory.h
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/q20type_traits.h
@@ -117,6 +120,9 @@
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qbytearrayalgorithms.h
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qbytearraylist.h
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qbytearrayview.h
+ mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qcalendar.h
+ mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qcborcommon.h
+ mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qcborvalue.h
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qchar.h
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qcompare.h
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qcompare_impl.h
@@ -129,6 +135,7 @@
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qcontiguouscache.h
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qdarwinhelpers.h
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qdatastream.h
+ mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qdatetime.h
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qdebug.h
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qexceptionhandling.h
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qflags.h
@@ -144,8 +151,12 @@
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qiodevicebase.h
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qiterable.h
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qiterator.h
+ mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qjsondocument.h
+ mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qjsonobject.h
+ mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qjsonvalue.h
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qline.h
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qlist.h
+ mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qlocale.h
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qlogging.h
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qmalloc.h
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qmap.h
@@ -166,6 +177,7 @@
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qprocessordetection.h
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qrect.h
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qrefcount.h
+ mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qregularexpression.h
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qscopedpointer.h
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qscopeguard.h
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qset.h
@@ -206,7 +218,9 @@
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qtversionchecks.h
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qtypeinfo.h
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qtypes.h
+ mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qurl.h
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qutf8stringview.h
+ mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/quuid.h
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qvariant.h
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qvarlengtharray.h
  mdp:/Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qversiontagging.h
@@ -371,14 +385,14 @@
 /Users/areay7/Opencv/SeetaFace2/build/SeetaNetExport.h
 /Users/areay7/Opencv/SeetaFace2/SeetaNet/src/orz/tools/void_bind.h
 /Users/areay7/Opencv/SeetaFace2/build/install/include/seeta/SeetaNetForward.h
-/Users/areay7/Opencv/SeetaFace2/FaceRecognizer/include/seeta/CStruct.h
 /Users/areay7/Opencv/SeetaFace2/FaceRecognizer/seeta/SeetaNetParseProto.h
+/Users/areay7/Opencv/SeetaFace2/FaceRecognizer/include/seeta/CStruct.h
 /Users/areay7/Opencv/SeetaFace2/SeetaNet/src/include_inner/layers/SeetaNetDeconvolutionCPU.h
 /Users/areay7/Opencv/SeetaFace2/build/install/include/seeta/SeetaLandmarkerExport.h
 /Users/areay7/Opencv/SeetaFace2/build/install/include/seeta/CTrackingFaceInfo.h
-/Users/areay7/Opencv/SeetaFace2/build/install/include/seeta/SeetaRecognizerExport.h
 /Users/areay7/Opencv/SeetaFace2/SeetaNet/src/include_inner/SeetaNetMemoryModel.h
 /Users/areay7/Opencv/SeetaFace2/build/FaceDetector/SeetaDetectorExport.h
+/Users/areay7/Opencv/SeetaFace2/build/install/include/seeta/SeetaRecognizerExport.h
 /Users/areay7/Opencv/SeetaFace2/build/install/include/seeta/SeetaDetectorExport.h
 /Users/areay7/QtCode/Qt_Sql/Opencv_test/mainwindow.cpp
  uic:./ui_mainwindow.h
@@ -493,12 +507,12 @@
 /Users/areay7/Opencv/SeetaFace2/SeetaNet/src/include_inner/layers/SeetaNetReshapeCPU.h
 /Users/areay7/Opencv/SeetaFace2/SeetaNet/src/include_inner/layers/SeetaNetSoftmaxCPU.h
 /Users/areay7/Opencv/SeetaFace2/FaceDetector/include/seeta/Struct.h
-/Users/areay7/Opencv/SeetaFace2/SeetaNet/src/include_inner/SeetaNetProto.h
-/Users/areay7/Opencv/SeetaFace2/SeetaNet/src/include_inner/layers/SeetaNetShapeIndexPatchCPU.h
 /Users/areay7/Opencv/SeetaFace2/SeetaNet/src/orz/tools/ctxmgr_lite.h
 /Users/areay7/Opencv/SeetaFace2/SeetaNet/src/orz/mem/pot.h
 /Users/areay7/Opencv/SeetaFace2/FaceRecognizer/seeta/Mutex.h
 /Users/areay7/Opencv/SeetaFace2/SeetaNet/src/include_inner/layers/SeetaNetBatchNormalizeCPU.h
+/Users/areay7/Opencv/SeetaFace2/SeetaNet/src/include_inner/layers/SeetaNetShapeIndexPatchCPU.h
+/Users/areay7/Opencv/SeetaFace2/SeetaNet/src/include_inner/SeetaNetProto.h
 /Users/areay7/Opencv/SeetaFace2/FaceLandmarker/seeta/ImageProcess.h
 /Users/areay7/Opencv/SeetaFace2/FaceLandmarker/seeta/FaceLandmarkerPrivate.h
 /Users/areay7/Opencv/SeetaFace2/FaceDetector/include/seeta/CFaceInfo.h

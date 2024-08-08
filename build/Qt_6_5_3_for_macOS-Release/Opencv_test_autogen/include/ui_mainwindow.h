@@ -26,7 +26,7 @@ class Ui_MainWindow
 public:
     QWidget *centralwidget;
     QWidget *videoWidget;
-    QWidget *widget_2;
+    QWidget *widgetLb;
     QHBoxLayout *horizontalLayout_2;
     QSpacerItem *horizontalSpacer;
     QHBoxLayout *horizontalLayout;
@@ -44,22 +44,22 @@ public:
     QHBoxLayout *horizontalLayout_3;
     QLabel *label_6;
     QSpacerItem *horizontalSpacer_3;
-    QLineEdit *lineEdit;
+    QLineEdit *numberEdit;
     QWidget *widget_5;
     QHBoxLayout *horizontalLayout_4;
     QLabel *label_7;
     QSpacerItem *horizontalSpacer_4;
-    QLineEdit *lineEdit_2;
+    QLineEdit *nameEdit;
     QWidget *widget_6;
     QHBoxLayout *horizontalLayout_5;
     QLabel *label_8;
     QSpacerItem *horizontalSpacer_5;
-    QLineEdit *lineEdit_3;
+    QLineEdit *departmentEdit;
     QWidget *widget_7;
     QHBoxLayout *horizontalLayout_6;
     QLabel *label_9;
     QSpacerItem *horizontalSpacer_6;
-    QLineEdit *lineEdit_4;
+    QLineEdit *timeEdit;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -72,12 +72,12 @@ public:
         videoWidget->setObjectName("videoWidget");
         videoWidget->setGeometry(QRect(0, 0, 480, 480));
         videoWidget->setStyleSheet(QString::fromUtf8(""));
-        widget_2 = new QWidget(videoWidget);
-        widget_2->setObjectName("widget_2");
-        widget_2->setGeometry(QRect(90, 380, 271, 61));
-        widget_2->setStyleSheet(QString::fromUtf8("border-radius:10px;\n"
+        widgetLb = new QWidget(videoWidget);
+        widgetLb->setObjectName("widgetLb");
+        widgetLb->setGeometry(QRect(90, 380, 271, 61));
+        widgetLb->setStyleSheet(QString::fromUtf8("border-radius:10px;\n"
 "background-color: rgba(49, 50, 54,69);"));
-        horizontalLayout_2 = new QHBoxLayout(widget_2);
+        horizontalLayout_2 = new QHBoxLayout(widgetLb);
         horizontalLayout_2->setObjectName("horizontalLayout_2");
         horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
@@ -85,7 +85,7 @@ public:
 
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName("horizontalLayout");
-        label = new QLabel(widget_2);
+        label = new QLabel(widgetLb);
         label->setObjectName("label");
         label->setMinimumSize(QSize(31, 21));
         label->setMaximumSize(QSize(31, 21));
@@ -93,7 +93,7 @@ public:
 
         horizontalLayout->addWidget(label);
 
-        label_2 = new QLabel(widget_2);
+        label_2 = new QLabel(widgetLb);
         label_2->setObjectName("label_2");
         label_2->setStyleSheet(QString::fromUtf8("font: 25 24pt \"\345\276\256\350\275\257\351\233\205\351\273\221 Light\";\n"
 "border:none;\n"
@@ -117,7 +117,7 @@ public:
         videoLb->setObjectName("videoLb");
         videoLb->setGeometry(QRect(0, 0, 480, 480));
         videoLb->raise();
-        widget_2->raise();
+        widgetLb->raise();
         headpicLb->raise();
         widget_3 = new QWidget(centralwidget);
         widget_3->setObjectName("widget_3");
@@ -184,16 +184,16 @@ public:
 
         horizontalLayout_3->addItem(horizontalSpacer_3);
 
-        lineEdit = new QLineEdit(widget_4);
-        lineEdit->setObjectName("lineEdit");
-        lineEdit->setEnabled(false);
+        numberEdit = new QLineEdit(widget_4);
+        numberEdit->setObjectName("numberEdit");
+        numberEdit->setEnabled(false);
         QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(lineEdit->sizePolicy().hasHeightForWidth());
-        lineEdit->setSizePolicy(sizePolicy);
+        sizePolicy.setHeightForWidth(numberEdit->sizePolicy().hasHeightForWidth());
+        numberEdit->setSizePolicy(sizePolicy);
 
-        horizontalLayout_3->addWidget(lineEdit);
+        horizontalLayout_3->addWidget(numberEdit);
 
 
         verticalLayout->addWidget(widget_4);
@@ -231,13 +231,13 @@ public:
 
         horizontalLayout_4->addItem(horizontalSpacer_4);
 
-        lineEdit_2 = new QLineEdit(widget_5);
-        lineEdit_2->setObjectName("lineEdit_2");
-        lineEdit_2->setEnabled(false);
-        sizePolicy.setHeightForWidth(lineEdit_2->sizePolicy().hasHeightForWidth());
-        lineEdit_2->setSizePolicy(sizePolicy);
+        nameEdit = new QLineEdit(widget_5);
+        nameEdit->setObjectName("nameEdit");
+        nameEdit->setEnabled(false);
+        sizePolicy.setHeightForWidth(nameEdit->sizePolicy().hasHeightForWidth());
+        nameEdit->setSizePolicy(sizePolicy);
 
-        horizontalLayout_4->addWidget(lineEdit_2);
+        horizontalLayout_4->addWidget(nameEdit);
 
 
         verticalLayout->addWidget(widget_5);
@@ -275,13 +275,13 @@ public:
 
         horizontalLayout_5->addItem(horizontalSpacer_5);
 
-        lineEdit_3 = new QLineEdit(widget_6);
-        lineEdit_3->setObjectName("lineEdit_3");
-        lineEdit_3->setEnabled(false);
-        sizePolicy.setHeightForWidth(lineEdit_3->sizePolicy().hasHeightForWidth());
-        lineEdit_3->setSizePolicy(sizePolicy);
+        departmentEdit = new QLineEdit(widget_6);
+        departmentEdit->setObjectName("departmentEdit");
+        departmentEdit->setEnabled(false);
+        sizePolicy.setHeightForWidth(departmentEdit->sizePolicy().hasHeightForWidth());
+        departmentEdit->setSizePolicy(sizePolicy);
 
-        horizontalLayout_5->addWidget(lineEdit_3);
+        horizontalLayout_5->addWidget(departmentEdit);
 
 
         verticalLayout->addWidget(widget_6);
@@ -319,13 +319,13 @@ public:
 
         horizontalLayout_6->addItem(horizontalSpacer_6);
 
-        lineEdit_4 = new QLineEdit(widget_7);
-        lineEdit_4->setObjectName("lineEdit_4");
-        lineEdit_4->setEnabled(false);
-        sizePolicy.setHeightForWidth(lineEdit_4->sizePolicy().hasHeightForWidth());
-        lineEdit_4->setSizePolicy(sizePolicy);
+        timeEdit = new QLineEdit(widget_7);
+        timeEdit->setObjectName("timeEdit");
+        timeEdit->setEnabled(false);
+        sizePolicy.setHeightForWidth(timeEdit->sizePolicy().hasHeightForWidth());
+        timeEdit->setSizePolicy(sizePolicy);
 
-        horizontalLayout_6->addWidget(lineEdit_4);
+        horizontalLayout_6->addWidget(timeEdit);
 
 
         verticalLayout->addWidget(widget_7);
@@ -347,13 +347,13 @@ public:
         titleLb->setText(QCoreApplication::translate("MainWindow", "\344\272\272\350\204\270\350\257\206\345\210\253\350\200\203\345\213\244\347\263\273\347\273\237", nullptr));
         headLb->setText(QString());
         label_6->setText(QCoreApplication::translate("MainWindow", "\345\267\245\345\217\267", nullptr));
-        lineEdit->setText(QCoreApplication::translate("MainWindow", "0001", nullptr));
+        numberEdit->setText(QCoreApplication::translate("MainWindow", "0001", nullptr));
         label_7->setText(QCoreApplication::translate("MainWindow", "\345\247\223\345\220\215", nullptr));
-        lineEdit_2->setText(QCoreApplication::translate("MainWindow", "0001", nullptr));
+        nameEdit->setText(QCoreApplication::translate("MainWindow", "0001", nullptr));
         label_8->setText(QCoreApplication::translate("MainWindow", "\351\203\250\351\227\250", nullptr));
-        lineEdit_3->setText(QCoreApplication::translate("MainWindow", "0001", nullptr));
+        departmentEdit->setText(QCoreApplication::translate("MainWindow", "0001", nullptr));
         label_9->setText(QCoreApplication::translate("MainWindow", "\346\227\266\351\227\264", nullptr));
-        lineEdit_4->setText(QCoreApplication::translate("MainWindow", "0001", nullptr));
+        timeEdit->setText(QCoreApplication::translate("MainWindow", "0001", nullptr));
     } // retranslateUi
 
 };

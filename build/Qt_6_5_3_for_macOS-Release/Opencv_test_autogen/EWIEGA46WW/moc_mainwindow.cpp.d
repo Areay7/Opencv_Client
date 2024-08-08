@@ -98,6 +98,9 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/wait.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/time.h \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/QDebug \
+  /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/QJsonDocument \
+  /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/QJsonObject \
+  /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/QJsonParseError \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/QTimer \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/q20memory.h \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/q20type_traits.h \
@@ -116,6 +119,9 @@
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qbytearrayalgorithms.h \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qbytearraylist.h \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qbytearrayview.h \
+  /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qcalendar.h \
+  /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qcborcommon.h \
+  /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qcborvalue.h \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qchar.h \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qcompare.h \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qcompare_impl.h \
@@ -128,6 +134,7 @@
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qcontiguouscache.h \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qdarwinhelpers.h \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qdatastream.h \
+  /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qdatetime.h \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qdebug.h \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qexceptionhandling.h \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qflags.h \
@@ -143,8 +150,12 @@
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qiodevicebase.h \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qiterable.h \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qiterator.h \
+  /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qjsondocument.h \
+  /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qjsonobject.h \
+  /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qjsonvalue.h \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qline.h \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qlist.h \
+  /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qlocale.h \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qlogging.h \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qmalloc.h \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qmap.h \
@@ -165,6 +176,7 @@
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qprocessordetection.h \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qrect.h \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qrefcount.h \
+  /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qregularexpression.h \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qscopedpointer.h \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qscopeguard.h \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qset.h \
@@ -205,7 +217,9 @@
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qtversionchecks.h \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qtypeinfo.h \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qtypes.h \
+  /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qurl.h \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qutf8stringview.h \
+  /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/quuid.h \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qvariant.h \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qvarlengtharray.h \
   /Users/areay7/Qt/6.5.3/macos/lib/QtCore.framework/Versions/A/Headers/qversiontagging.h \

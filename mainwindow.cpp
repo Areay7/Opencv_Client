@@ -8,7 +8,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 
     //打开摄像头
-    cap.open(1); //dev/video
+    cap.open(0); //dev/video
     //启动定时器事件
     startTimer(100);
 
@@ -26,6 +26,10 @@ MainWindow::MainWindow(QWidget *parent)
     connect(&mtimer, &QTimer::timeout, this, &MainWindow::timer_connect);
     mtimer.start(5000);
 
+    flag = 0;
+
+    ui->widgetLb->hide();
+
 }
 
 MainWindow::~MainWindow()
@@ -42,20 +46,25 @@ void MainWindow::timerEvent(QTimerEvent *e)
         cap.read(srcImage);//读取一帧数据
     }
 
+    // 把图片大小设置与窗口大小一样
+    cv::resize(srcImage, srcImage, Size(480,480));
+
     Mat grayImage;
     //转灰度图
     cvtColor(srcImage, grayImage, COLOR_BGR2GRAY);
     //检测人脸数据
     std::vector<Rect> faceRects;
     cascade.detectMultiScale(grayImage,faceRects);
-    qDebug()<< "size :" <<faceRects.size();
-    if(faceRects.size()>0)
+    // qDebug()<< "size :" <<faceRects.size();
+    if(faceRects.size()>0 && flag >= 0)
     {
         Rect rect = faceRects.at(0);//第一个人脸的矩形框
         // rectangle(srcImage,rect,Scalar(0,0,255));
         //移动人脸框（图片--QLabel）
         ui->headpicLb->move(rect.x,rect.y);
 
+        if(flag > 2)
+        {
         // 把Mat数据转化为QbyteArray, 编码成 jpg 格式再发送
         std::vector<uchar> buff;
         cv::imencode(".jpg", srcImage, buff);
@@ -70,11 +79,22 @@ void MainWindow::timerEvent(QTimerEvent *e)
 
         //发送
         msocket.write(sendData);
+        flag = -2;
 
-    }else
+
+        faceMat = srcImage(rect);
+        // 保存
+        imwrite("./face.jpg",faceMat);
+        }
+
+        flag++;
+
+    }
+    if(faceRects.size() == 0)
     {
         //把人脸框移动到中心位置
         ui->headpicLb->move(140,100);
+        flag = 0;
     }
 
 
@@ -84,15 +104,45 @@ void MainWindow::timerEvent(QTimerEvent *e)
     QImage image(srcImage.data,srcImage.cols, srcImage.rows,srcImage.step1(),QImage::Format_RGB888);
     // QPixmap mmp = QPixmap::fromImage(image);
     // 缩放图像使其适应 QLabel 的大小
-    QPixmap mmp = QPixmap::fromImage(image).scaled(ui->videoLb->size(), Qt::KeepAspectRatio);
+    // QPixmap mmp = QPixmap::fromImage(image).scaled(ui->videoLb->size(), Qt::KeepAspectRatio);
+
+    QPixmap mmp = QPixmap::fromImage(image);
+
     ui->videoLb->setPixmap(mmp);
 }
 
 void MainWindow::recv_data()
 {
-    QString msg = msocket.readAll();
-    qDebug() << "msg : " << msg;
-    ui->lineEdit->setText(msg);
+    QByteArray array = msocket.readAll();
+
+    // {EmployeeID:%1, name:%2, department:物联网工程, time:%3}
+    // JSON 数据解析
+    QJsonParseError err;
+    QJsonDocument doc = QJsonDocument::fromJson(array, &err);
+    if(err.error != QJsonParseError::NoError)
+    {
+        qDebug() << "JSON 数据错误";
+        return;
+    }
+    else
+    {
+        QJsonObject obj = doc.object();
+        QString EmployeeID = obj.value("EmployeeID").toString();
+        QString name = obj.value("name").toString();
+        QString department = obj.value("department").toString();
+        QString time = obj.value("time").toString();
+
+        ui->numberEdit->setText(EmployeeID);
+        ui->nameEdit->setText(name);
+        ui->departmentEdit->setText(department);
+        ui->timeEdit->setText(time);
+
+        // 通过样式显示图片
+        ui->headLb->setStyleSheet("border-radius:75px; background-image: url(./face.jpg);");
+        ui->widgetLb->show();
+    }
+
+
 }
 
 void MainWindow::timer_connect()
